@@ -24,3 +24,8 @@ data-title: is the message shown to users.
 
 Todos:
 - Convert to directive for angular js
+
+
+We will be using an abritrary versioning system.
+
+Current version: AB - 6000
