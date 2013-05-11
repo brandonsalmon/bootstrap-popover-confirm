@@ -20,3 +20,7 @@ data-title: is the message shown to users.
       data-popover-confirm='Cardonfile.purchase()'>
       Confirm and Purchase
     </span>
+
+
+Todos:
+- Convert to directive
