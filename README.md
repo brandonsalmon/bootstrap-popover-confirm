@@ -23,4 +23,4 @@ data-title: is the message shown to users.
 
 
 Todos:
-- Convert to directive
+- Convert to directive for angular js
