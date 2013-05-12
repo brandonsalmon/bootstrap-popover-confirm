@@ -14,6 +14,7 @@ data-popover-confirm: activates the script.
 data-title: is the message shown to users.
 
 jQuery Version
+
     <span
       class='btn btn-success'
       data-title='Confirm order and use selected payment method?'
@@ -22,6 +23,7 @@ jQuery Version
     </span>
 
 Angular JS Directive
+
     <div 
       class='btn btn-danger' 
       ng-model='record' 
