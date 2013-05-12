@@ -33,7 +33,7 @@ directives.directive('ngPopoverConfirm', function() {
         var popover = $(this).closest('.popover'),
           btn = popover.prev(),
           callback = btn.attr('ng-popover-confirm'),
-          result = eval(callback);
+          result = eval('scope.' + callback);
 
         btn.popover('hide');
       });
