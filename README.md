@@ -13,7 +13,7 @@ data-popover-confirm: activates the script.
 
 data-title: is the message shown to users.
 
-
+jQuery Version
     <span
       class='btn btn-success'
       data-title='Confirm order and use selected payment method?'
@@ -21,6 +21,14 @@ data-title: is the message shown to users.
       Confirm and Purchase
     </span>
 
+Angular JS Directive
+    <div 
+      class='btn btn-danger' 
+      ng-model='record' 
+      ng-popover-confirm="scope.deleteRecord()" 
+      data-title="Delete this form entry?">
+      <i class='icon-remove'></i> Delete
+    </div>
 
 Todos:
 - Convert to directive for angular js
