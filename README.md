@@ -1,15 +1,7 @@
 Bootstrap Popover Confirm
 =========================
 
-Dependencies:
-- jQuery
-- Twitter Bootstrap
-
-## Getting Started
-### 1. Include javascript however you wish.
-
-### 2. Attach the html to an element.
-data-popover-confirm: activates the script.
+data-popover-confirm: activates the script and is the evaluated string that is run.
 
 data-title: is the message shown to users.
 
@@ -24,18 +16,21 @@ jQuery Version
 
 Angular JS Directive
 
+View:
+
     <div 
       class='btn btn-danger' 
       ng-model='record' 
-      ng-popover-confirm="scope.deleteRecord()" 
+      ng-popover-confirm="deleteRecord()" 
       data-title="Delete this form entry?">
       <i class='icon-remove'></i> Delete
     </div>
+    
+Controller:
 
-Todos:
-- Convert to directive for angular js
-
-
-We will be using an abritrary versioning system.
-
-Current version: ARBVERS.6000
+    $scope.deleteRecord = function() {
+		$http.delete('/formentries/record/' + this.record.id).then(function(data){
+			toastr.success("Record deleted!");
+			$scope.loadRecords();
+		});
+	}
