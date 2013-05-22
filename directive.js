@@ -4,7 +4,7 @@ var directives = angular.module('3rdpartyforms.directives', []);
 
 directives.directive('ngPopoverConfirm', function() {
   return {
-    restirct: 'A',
+    restrict: 'A',
     link: function (scope, element, attrs) {
       element.popover({
         html: true,
